@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
+import javax.swing.JButton;
 
 public class Login extends JFrame {
 	
@@ -19,7 +20,7 @@ public class Login extends JFrame {
 		setResizable(false);
 		setTitle("ChernoChat Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(300, 400);
+		setSize(300, 157);
 		setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -34,6 +35,10 @@ public class Login extends JFrame {
 		JLabel lblName = new JLabel("Name:");
 		lblName.setBounds(116, 11, 46, 14);
 		contentPane.add(lblName);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(10, 67, 274, 43);
+		contentPane.add(btnNewButton);
 	}
 	
 	public static void main(String[] args) {
